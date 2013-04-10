@@ -1,0 +1,95 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#page-wrapper {
+    width: 1024px;
+    margin: auto;
+}
+
+#calendar {
+    margin:10px;
+}
+
+#branding {
+  background-color: #222;
+  height:50px;
+  width:422px;
+  margin:auto;
+  color: #CCC;
+  font-family: Helvetica;
+  font-size:30px;
+  font-weight:bold;
+  text-align:center;
+  line-height:50px;
+}
+
+#container {
+    border: 1px solid #AAA;
+    height: 400px;
+    width: 400px;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 10px;
+    margin: auto;
+}
+
+#regional, #english {
+    float: left;
+    width: 199px;
+    height: 180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#regional, #ft .left {
+    border-right: 1px solid #999;
+}
+
+#english .year {
+    font-size: 24px;
+}
+
+#english .date, #regional .date {
+    font-size: 100px;
+}
+
+.full {
+    color: #fff;
+    background-color: #555;
+    clear: both;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.day {
+    font-size: 20px;
+}
+
+.good-time {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 7px;
+    text-align: justify;
+}
+
+#ft {
+    border: 1px solid #777;
+    height: 80px;
+}
+
+#ft .left, #ft .right {
+    float: left;
+    width: 180px;
+    height: 70px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+

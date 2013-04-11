@@ -93,3 +93,11 @@
     font-weight: bold;
 }
 
+@media screen and (max-width:1024px) {
+  #container {
+    margin:0 10px; 
+  }
+  #branding {
+    margin:10px 10px 0 10px; 
+  }
+}

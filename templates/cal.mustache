@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel='stylesheet' href="stylesheets/site.css" type="text/css">
+    </head>
+    <body>
+        <div id='page-wrapper'>
+            <div id='calendar'>
+                <div id='branding'> IndianCal.com</div>
+                <div id='container'>
+                    <div id='hd'>
+                        <div id='regional'>
+                            <div class='year'>{{records.tamil_data.ty}}</div>
+                            <div class='date'>{{records.tamil_data.td}}</div>
+                            <div class='month'>{{records.tamil_data.tm}}</div>
+                        </div>
+                        <div id='english'>
+                            <div class='year'>{{records.tamil_data.ey}}AD</div>
+                            <div class='date'>{{records.tamil_data.ed}}</div>
+                            <div class='month'>{{records.tamil_data.em}}</div>
+                        </div>
+                    </div>
+                    <div id='bd'>
+                        <div class='full day'>{{records.tamil_data.tday}}</div>
+                        <div class='full good-time'> {{records.tamil_labels.good}} : {{records.tamil_data.good}}</div>
+                        <div class='description'>{{records.tamil_data.desc}}</div>
+                    </div>
+                    <div id='ft'>
+                        <div class='left'>
+                            <div>{{records.tamil_labels.raagu}} : {{records.tamil_data.raagu}}</div>
+                            <div>{{records.tamil_labels.kuligai}} : {{records.tamil_data.kuligai}}</div>
+                            <div>{{records.tamil_labels.yema}} : {{records.tamil_data.yema}}</div>
+                        </div>
+                        <div class='right'>
+                            <div>{{records.tamil_labels.thithi}} : {{records.tamil_data.thithi}}</div>
+                            <div>{{records.tamil_labels.chand}} : {{records.tamil_data.chand}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -10,4 +10,8 @@ app.get('/tamil', function(req, res){
 });
 
 app.listen(3000);
-console.log('Listening on port 3000');
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
+//console.log('Listening on port 3000');

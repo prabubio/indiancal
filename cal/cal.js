@@ -1,10 +1,12 @@
 var fs = require('fs');
 var mustache = require('mustache');
-var file = __dirname + '/../data/tamil_2013.json';
+var dataFile =  'data/tamil_2013.json';
+var templateFile = 'templates/cal.mustache';
+var encodeType = 'utf8';
+
 
 module.exports = {
     getCal : function(req, res) {
-        
         var dayOfYear = function() {
             var now = new Date();
             var start = new Date(now.getFullYear(), 0, 0);
@@ -14,7 +16,7 @@ module.exports = {
             return day;
         }
         
-        var data = fs.readFile(file, 'utf8', function (err, data) {
+        var data = fs.readFile(dataFile, encodeType, function (err, data) {
             if (err) {
                 console.log('Error: ' + err);
                 return;
@@ -30,12 +32,14 @@ module.exports = {
              
             var rData = {records:data};
             //console.log(rData);
-            var page = fs.readFileSync('templates/cal.mustache', "utf8");
-            var html = mustache.to_html(page,rData);
-            
-            res.send(html);
+            var page = fs.readFile(templateFile, encodeType, function (err, page) {
+                if (err) {
+                    console.log('Error: ' + err);
+                    return;
+                }
+                var html = mustache.to_html(page,rData);
+                res.send(html);     
+            });
         });
-        
-        
     }
 }
